@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── fizx.uk dark palette ────────────────────────────────────────────────────
+   H S% L% format — Tailwind wraps these in hsl(var(…))
+──────────────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  :root,
+  .dark {
+    --background:           215 28%  7%;
+    --foreground:           210 40% 96%;
+
+    --card:                 214 38% 12%;
+    --card-foreground:      210 40% 96%;
+
+    --popover:              214 38% 12%;
+    --popover-foreground:   210 40% 96%;
+
+    --primary:              158 64% 52%;   /* #34d399 emerald */
+    --primary-foreground:   215 28%  7%;
+
+    --secondary:            211 34% 18%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted:                211 34% 18%;
+    --muted-foreground:     212  9% 58%;
+
+    --accent:               255 92% 76%;   /* #a78bfa purple */
+    --accent-foreground:    215 28%  7%;
+
+    --destructive:            0 62% 50%;
+    --destructive-foreground: 210 40% 96%;
+
+    --border:               211 34% 18%;
+    --input:                211 34% 18%;
+    --ring:                 158 64% 52%;
+
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+}

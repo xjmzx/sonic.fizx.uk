@@ -1,56 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>sonic.fizx.uk</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      min-height: 100dvh;
-      background: #0d1117;
-      color: #f0f6fc;
-      font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .favicon {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      width: 48px;
-      height: 48px;
-      image-rendering: pixelated;
-    }
-    .favicon span { display: block; }
-    h1 {
-      font-size: clamp(2rem, 8vw, 4rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1;
-    }
-    .grad { background: linear-gradient(90deg, #34d399, #a78bfa, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .muted { color: #6b7a8d; }
-    p { font-size: 1rem; color: #6b7a8d; max-width: 28ch; text-align: center; line-height: 1.6; }
-    a { color: #34d399; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { position: fixed; bottom: 1.5rem; font-size: 0.75rem; color: #6b7a8d; }
-  </style>
-</head>
-<body>
-  <div class="favicon">
-    <span style="background:#0d1117"></span>
-    <span style="background:#34d399"></span>
-    <span style="background:#a78bfa"></span>
-    <span style="background:#131d2a"></span>
-  </div>
-  <h1><span class="grad">sonic</span><span class="muted">.fizx.uk</span></h1>
-  <p>Something new is on the way.</p>
-  <a href="https://fizx.uk">← fizx.uk</a>
-  <footer>coming soon</footer>
-</body>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sonic · sonic.fizx.uk</title>
+    <meta name="description" content="Share short audio samples on Nostr. Upload, play, download and collaborate." />
+    <meta property="og:title" content="sonic · sonic.fizx.uk" />
+    <meta property="og:description" content="Share short audio samples on Nostr." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>html { background-color: #0d1117; }</style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
